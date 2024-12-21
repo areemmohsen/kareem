@@ -1,0 +1,96 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(45deg, #5fa2cc, #ccf1ff);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+}
+
+header {
+    background-color: rgba(0, 102, 204, 0.9);
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.back-home-btn {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #004c99;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.back-home-btn:hover {
+    background-color: #003366;
+    transform: scale(1.1);
+}
+
+main {
+    margin: 40px auto;
+    padding: 25px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 1200px;
+}
+
+.quran-recitation {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.quran-recitation h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+select {
+    width: 40%;
+    padding: 12px;
+    margin: 15px 0;
+    font-size: 18px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #f2f2f2;
+    color: #333;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+select:focus {
+    border-color: #ff6347;
+    outline: none;
+    background-color: #fff;
+}
+
+audio {
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 8px;
+    background-color: #f2f2f2;
+}
+
+footer {
+    background-color: #004c99;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 0;
+    font-weight: lighter;
+}

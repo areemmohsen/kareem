@@ -1,0 +1,142 @@
+/* إعدادات الصفحة */
+body {
+    font-family: 'Arial', sans-serif;
+    background: radial-gradient(circle, #111 50%, #000);
+    color: #fff;
+    margin: 0;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background: linear-gradient(145deg, #2d2d2d, #1c1c1c);
+    border-radius: 20px;
+    box-shadow: 8px 8px 16px #0d0d0d, -8px -8px 16px #333;
+}
+
+/* رأس الصفحة */
+header {
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #f0f0f0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+#home-button {
+    background: linear-gradient(145deg, #1e73b8, #155a8d);
+    box-shadow: 5px 5px 15px #0d3d5e, -5px -5px 15px #1f8dcf;
+    color: #fff;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    transition: transform 0.1s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+#home-button:hover {
+    transform: scale(1.05);
+}
+
+#home-button:active {
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.4), inset -5px -5px 10px rgba(255, 255, 255, 0.1);
+}
+
+
+.ads-free {
+    font-size: 14px;
+    color: #00ff00;
+}
+
+/* تصميم الدائرة */
+.tasbih-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.circle {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(145deg, #1e8f4d, #146d38);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 8px 8px 16px #0f552e, inset -8px -8px 16px #259768;
+    animation: pulse 2s infinite;
+}
+
+.circle #tasbih-counter {
+    font-size: 60px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.tasbih-text {
+    position: absolute;
+    bottom: 15px;
+    font-size: 18px;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+/* أزرار ثلاثية الأبعاد */
+.buttons button {
+    font-size: 18px;
+    padding: 15px 30px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: linear-gradient(145deg, #2d2d2d, #1c1c1c);
+    box-shadow: 5px 5px 10px #0d0d0d, -5px -5px 10px #333;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    transition: transform 0.1s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+#tasbih-button {
+    background: linear-gradient(145deg, #1e8f4d, #146d38);
+    box-shadow: 5px 5px 15px #0f552e, -5px -5px 15px #259768;
+}
+
+#reset-button {
+    background: linear-gradient(145deg, #8f1e1e, #6d1414);
+    box-shadow: 5px 5px 15px #551010, -5px -5px 15px #972525;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+button:active {
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.4), inset -5px -5px 10px rgba(255, 255, 255, 0.1);
+}
+
+/* تأثير النبض للدائرة */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: inset 8px 8px 16px #0f552e, inset -8px -8px 16px #259768;
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: inset 10px 10px 20px #0d4728, inset -10px -10px 20px #2fa672;
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: inset 8px 8px 16px #0f552e, inset -8px -8px 16px #259768;
+    }
+}

@@ -1,0 +1,87 @@
+
+.card {
+    position: relative;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    animation: fadeIn 0.8s ease-out; 
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+.card video {
+    z-index: 1;
+    display: block;
+    width: 100%; 
+    transition: opacity 0.2s ease, filter 0.2s ease;
+}
+
+
+.card:hover video {
+    opacity: 0.9;
+    filter: brightness(1.1); 
+}
+
+
+.card:hover::before {
+    content: "▶️"; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: white;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    pointer-events: none; 
+}
+
+.card:hover {
+    border: 1px solid #007bff; 
+}
+
+.contact-link {
+    text-decoration: none;
+    color: #333;
+    text-align: center;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.contact-link i {
+    color: #007bff;
+    margin-bottom: 5px;
+    transition: color 0.2s ease;
+}
+
+.contact-link p {
+    font-size: 1rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+
+.contact-link:hover {
+    transform: scale(1.1);
+    color: #0056b3;
+}
+
+.contact-link:hover i {
+    color: #0056b3;
+}
